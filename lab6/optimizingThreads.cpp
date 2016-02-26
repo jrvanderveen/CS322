@@ -151,7 +151,7 @@ int main(){
   ridiculousStart = get_wallTime();
   output = ridiculousCalcOptimized(array1, array2, array3, dim, 0);
   ridiculousEnd = get_wallTime();
-  cout << " Time needed to complete ridiculous calculation: "
+  cout << " Time needed to complete optimized calculation: "
        << ridiculousEnd - ridiculousStart << endl;
   cout << " Ridiculous calculation output                 : "
        << output << endl;
@@ -181,7 +181,7 @@ int main(){
         output += threads[i].get();
     }
     ridiculousEnd = get_wallTime();
-    cout << " Time needed to complete ridiculous calculation: "
+    cout << " Time needed to complete ridiculous threaded calculation: "
        << ridiculousEnd - ridiculousStart << endl;
     cout << " Ridiculous calculation output                 : "
        << output << endl;
@@ -205,7 +205,7 @@ int main(){
         output += threadsOp[i].get();
     }
     ridiculousEnd = get_wallTime();
-    cout << " Time needed to complete ridiculous calculation: "
+    cout << " Time needed to complete opt-threaded calculation: "
        << ridiculousEnd - ridiculousStart << endl;
     cout << " Ridiculous calculation output                 : "
        << output << endl;
